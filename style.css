@@ -1,0 +1,127 @@
+*{
+ margin: 0;
+ border: 0;
+ font-family: Arial, sans-serif;
+ box-sizing: border-box;
+}
+.header {
+    position: absolute; /* Allows the header to float above the video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 10; /* Ensures it stays above the video */
+}
+
+.header .logo img {
+    width: 150px; /* Adjust logo size */}
+.main-nav ul, .secondary-nav ul{ 
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;}
+    
+    
+    .main-nav ul li, .secondary-nav ul li {
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    .secondary-nav ul .menu-icon {
+        font-size: 18px;
+        cursor: pointer;
+    }
+img{
+    height: 100vh;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.text-overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+.text-overlay p {
+    font-size: 16px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.text-overlay h3 {
+    font-size: 48px;
+    margin: 5px 0;
+    font-weight: bold;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+.text-overlay button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.text-overlay button:hover {
+    background-color: white;
+    color: black;
+}
+/* Footer Styling */
+.footer {
+    background-color: black; /* Matches the black background */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center; /* Aligns items in the center horizontally */
+    align-items: center; /* Vertically aligns the text */
+    gap: 40px; /* Adds space between the items */
+    font-size: 14px; /* Sets the font size */
+    color: white; /* Makes the text white */
+    text-transform: uppercase; /* Capitalizes text */
+    font-weight: bold; /* Makes text bold */
+  }
+  
+  .footer-content a {
+    color: white; /* Ensures links are white */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline; /* Adds underline on hover for better UX */
+  }
+  
